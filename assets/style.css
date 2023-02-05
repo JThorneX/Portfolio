@@ -84,38 +84,61 @@ section {
   border: 5px solid rgb(0, 36, 53);
 }
 
-img {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
+.container {
+  display: flex;
 }
 
-img:hover {
-  opacity: 0.3;
-}
-
-h4 {
-  background-color: rgb(13, 101, 141);
-  color: rgb(132, 182, 206);
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.section-content {
-  position: relative;
-  width: 50%;
-  transition: 0.5s ease;
-  opacity: 0;
+.overlay {
+  display: flex;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 386px;
+  height: 375px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(78, 78, 78);
+  transition: background 0.5s ease;
+  /* opacity: 0;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center; */
 }
 
-.section-content {
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
+  width: auto;
+  height: auto;
+  left: 0;
+}
+
+.button {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  align-self: center;
+  right: 27%;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(132, 182, 206);
+  border: solid 2px rgb(132, 182, 206);
+  z-index: 1;
+}
+
+.container:hover .button {
   opacity: 1;
 }
+
+/* img:hover {
+  opacity: 0.3;
+} */
 
 footer {
   list-style-type: none;
