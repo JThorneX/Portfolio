@@ -28,11 +28,11 @@ h1 {
 
 nav ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
   display: flex;
+  float: right;
   justify-content: space-evenly;
-  text-align: right;
+  text-align: end;
+  width: 40%;
 }
 
 nav a {
@@ -141,7 +141,6 @@ footer {
   list-style-type: none;
   font-size: 20px;
   display: flex;
-  text-align: center;
   background-color: rgb(13, 101, 141);
   border-top: 5px solid rgb(132, 182, 206);
   color: rgb(132, 182, 206);
@@ -149,6 +148,8 @@ footer {
   bottom: 0px;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
+  margin-left: 5px;
 }
 
 footer a {
