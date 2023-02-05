@@ -1,27 +1,38 @@
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 5px;
 }
 
 body {
   background-color: rgb(175, 192, 199);
+  padding: 5px;
 }
 
 header {
-  padding: 2%;
+  padding: 1%;
   background-color: rgb(13, 101, 141);
   align-items: center;
   color: rgb(175, 192, 199);
   display: flex;
 }
 
+nav {
+  width: 100%;
+}
+
 h1 {
   font-size: 40px;
+  min-width: 300px;
 }
 
 nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
   display: flex;
-  justify-content: space-around;
-  min-width: 300px;
+  justify-content: space-between;
+  text-align: right;
 }
 
 nav a {
@@ -29,13 +40,26 @@ nav a {
   font-weight: bold;
   text-decoration: none;
 }
+
 nav a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 36, 53);
   cursor: pointer;
 }
 
+.left-column {
+  float: left;
+  width: 24%;
+  height: 100%;
+}
+
 aside {
-  display: flex;
+  padding: 60px;
+  width: 25%;
+  background-color: rgb(13, 101, 141);
+  color: rgb(132, 182, 206);
+  border: 5px solid rgb(132, 182, 206);
+  position: absolute;
+  height: 100%;
 }
 
 aside h2 {
@@ -43,5 +67,48 @@ aside h2 {
   justify-content: left;
 }
 aside p {
-  justify-content: flex-end;
 }
+
+.right-column {
+  float: right;
+  width: 74%;
+}
+
+section {
+  padding: 0px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(0, 36, 53);
+}
+
+footer {
+  list-style-type: none;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  background-color: rgb(13, 101, 141);
+  border-top: 5px solid rgb(132, 182, 206);
+  color: rgb(132, 182, 206);
+  position: fixed;
+  bottom: 0px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer a {
+  list-style-type: none;
+  color: rgb(132, 182, 206);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(0, 36, 53);
+}
+
+/* .current-project {
+  position: fixed;
+} */
