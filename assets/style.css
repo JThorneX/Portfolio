@@ -15,6 +15,7 @@ header {
   align-items: center;
   color: rgb(175, 192, 199);
   display: flex;
+  border-bottom: 5px solid rgb(132, 182, 206);
 }
 
 nav {
